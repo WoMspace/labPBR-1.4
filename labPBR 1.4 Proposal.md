@@ -16,3 +16,16 @@ Things to keep in mind:
 - 1.3 f0 and metalness support MUST remain intact.
 - For now this is theoretical, as sp614x has not confirmed he will add the features required to Optifine.
 
+Textures will be named either `texture_s.png` or omit the `texture` and be `_s.png` or `_s` for the purposes of this document.
+Until sp614x defines the behaviour in Optifine, the second specular and normal map will use the extensions `_s2` and `_n2` as in `texture_s2.png`
+
+The additional maps are going to be as follows:
+- Metalness (override labPBR 1.3 metals)
+    - More granularity for stuff like copper in MC 1.17
+- Anisotropic rotation (0-90)
+    - 90 degrees is enough to make a circle
+- Anisotropic strength
+- IOR (exponential curve for higher precision at lower values)
+    - Given a distribution, the majority of IOR values of common materials is lower, with the higher the IOR the less common it is.
+- Subsurface colour
+    - Who uses albedo for SSS?????
