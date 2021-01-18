@@ -29,3 +29,34 @@ The additional maps are going to be as follows:
     - As best I understand it, metalness and metallic colour in three channels
 - f0 Colour
     - Also for metals?
+
+
+=============================
+
+labPBR 1.4 Layout
+
+Specular
+R = Perceptual Smoothness
+G = F0 (0-229), Hardcoded Metals (230-255)
+B = Porosity (0-64), Subsurface Scattering (65-255)
+A = Emissiveness (0-254)
+
+Normal
+R = Normal X
+G = Normal Y
+B = Ambient Occlusion
+A = Height
+
+Specular 2
+R = F0 Red
+G = F0 Green
+B = F0 Blue
+A = Anisotropic Strength
+
+Specular 3
+R = Extinction Red
+G = Extinction Green
+B = Extinction Blue
+A = Anisotropic Rotation
+
+===========================
